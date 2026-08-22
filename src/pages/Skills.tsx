@@ -51,7 +51,6 @@ const skillCategories = [
     skills: [
       { name: "Social Engineering Recon", level: 90 },
       { name: "Infrastructure Mapping", level: 88 },
-      { name: "Dark Web Intelligence", level: 75 },
       { name: "Threat Intelligence", level: 85 },
     ],
   },
@@ -63,7 +62,7 @@ const skillCategories = [
       { name: "Disk Forensics", level: 80 },
       { name: "Network Forensics", level: 88 },
       { name: "Malware Analysis", level: 82 },
-      { name: "Incident Response", level: 90 },
+      { name: "Incident Response", level: 60 },
     ],
   },
   {
@@ -74,15 +73,15 @@ const skillCategories = [
       { name: "Network Penetration Testing", level: 90 },
       { name: "Mobile Application Security", level: 80 },
       { name: "API Security Testing", level: 92 },
-      { name: "Active Directory Attacks", level: 85 },
+      { name: "Active Directory Attacks", level: 90 },
     ],
   },
   {
     name: "Active Directory",
     icon: Shield,
     skills: [
-      { name: "AD Fundamentals", level: 76 },
-      { name: "Group Policy", level: 72 },
+      { name: "AD Fundamentals", level: 85 },
+      { name: "Group Policy", level: 80 },
       { name: "Kerberos & LDAP", level: 80 },
       { name: "Privilege Escalation", level: 84 },
       { name: "AD Enumeration", level: 88 },
