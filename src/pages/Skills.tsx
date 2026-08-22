@@ -20,7 +20,6 @@ const skillCategories = [
     skills: [
       { name: "Python", level: 95 },
       { name: "Bash/Shell Scripting", level: 70 },
-      { name: "Go", level: 70 },
       { name: "C/C++", level: 80 },
     ],
   },
@@ -30,7 +29,7 @@ const skillCategories = [
     skills: [
       { name: "Burp Suite", level: 95 },
       { name: "Metasploit", level: 92 },
-      { name: "Nmap/Masscan", level: 95 },
+      { name: "Nmap", level: 95 },
       { name: "Wireshark", level: 88 },
       { name: "IDA Pro/Ghidra", level: 75 },
     ],
@@ -40,7 +39,7 @@ const skillCategories = [
     icon: Lock,
     skills: [
       { name: "Encryption/Decryption", level: 80 },
-      { name: "PKI Infrastructure", level: 75 },
+      { name: "Encoding & Decoding", level: 85 },
       { name: "Hash Analysis", level: 85 },
       { name: "Crypto Attacks", level: 78 },
     ],
@@ -72,8 +71,7 @@ const skillCategories = [
     skills: [
       { name: "Web Application Testing", level: 95 },
       { name: "Network Penetration Testing", level: 90 },
-      { name: "Mobile Application Security", level: 80 },
-      { name: "API Security Testing", level: 92 },
+      { name: "API Security Testing", level: 90 },
       { name: "Active Directory Attacks", level: 90 },
     ],
   },
