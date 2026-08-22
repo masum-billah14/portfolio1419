@@ -21,6 +21,7 @@ const skillCategories = [
       { name: "Python", level: 95 },
       { name: "Bash/Shell Scripting", level: 70 },
       { name: "C/C++", level: 80 },
+      { name: "PowerShell", level: 70 },
     ],
   },
   {
