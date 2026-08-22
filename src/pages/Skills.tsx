@@ -50,6 +50,7 @@ const skillCategories = [
     icon: Search,
     skills: [
       { name: "Social Engineering Recon", level: 90 },
+      {name: "Social Media Intelligence", level: 85},
       { name: "Infrastructure Mapping", level: 88 },
       { name: "Threat Intelligence", level: 85 },
     ],
