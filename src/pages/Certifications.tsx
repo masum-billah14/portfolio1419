@@ -157,7 +157,7 @@ const certifications = [
     verifyUrl: "https://www.credly.com/badges/3be2033a-f34b-4068-8803-3ec712018544/public_url",
   },
   {
-    name: "Hackviser CORE",
+    name: "CORE - Certified Cybersecurity Foundations",
     organization: "Hackviser",
     year: "2026",
     level: "Beginner",
