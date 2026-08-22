@@ -161,7 +161,7 @@ const certifications = [
     organization: "Hackviser",
     year: "2026",
     level: "Beginner",
-    description: "Hackviser Core security certification and verification.",
+    description: "Hackviser CORE security certification and verification.",
     verifyUrl: "https://hackviser.com/verify?id=HV-CORE-L15QXPQB",
   },
 ];
