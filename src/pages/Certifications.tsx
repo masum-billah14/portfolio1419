@@ -109,11 +109,11 @@ const certifications = [
     verifyUrl: "https://assets.tryhackme.com/certification-certificate/697da2ed6579ac88f26d9d79.pdf",
   },
   {
-    name: "Certified Blue Teamer (Community Edition)",
+    name: "Certified Blue Teamer (CE)",
     organization: "The SecOps Group",
     year: "2026",
     level: "Professional",
-    description: "Intermediate-level blue team and incident response exam focused on investigating a multi-stage intrusion in a Windows Active Directory enterprise.",
+    description: "Intermediate-level blue team and incident response exam focused on investigating a multi-stage intrusion.",
     verifyUrl: "https://candidate.speedexam.net/certificate.aspx?SSTATE=am4131EniU8ntjp4bO5mXc2wdoUzNa0UCAvgBJiAHyAgLg1N9m93WP1UEw/Ix9jZmKiQk0UOyMEvyZsB1I3Ocie3e8H2hykwHPa3l06Fyww=",
   },
   {
