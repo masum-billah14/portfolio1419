@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+  }
+
+  :root {
+    /* Cybersecurity Professional Dark Theme */
+    /* Background: #0B0F14 | Cards: #111827 | Text: #E5E7EB */
+    /* Accent: #22C55E (green) | Secondary: #38BDF8 (cyan) */
+    
+    --background: 215 30% 6%;
+    --foreground: 220 14% 91%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 220 14% 91%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 220 14% 91%;
+
+    /* Terminal green - primary accent */
+    --primary: 142 71% 45%;
+    --primary-foreground: 215 30% 6%;
+
+    /* Cyan - secondary accent */
+    --secondary: 199 89% 60%;
+    --secondary-foreground: 215 30% 6%;
+
+    /* Muted: #9CA3AF */
+    --muted: 222 47% 14%;
+    --muted-foreground: 218 11% 65%;
+
+    --accent: 222 47% 14%;
+    --accent-foreground: 220 14% 91%;
+
+    /* Danger: #EF4444 */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 14% 91%;
+
+    /* Border: #1F2933 */
+    --border: 210 24% 16%;
+    --input: 222 47% 14%;
+    --ring: 142 71% 45%;
+
+    --radius: 0.5rem;
+
+    --terminal-bg: 222 47% 11%;
+    --terminal-border: 210 24% 16%;
+    
+    /* Status colors */
+    --success: 142 71% 45%;
+    --warning: 45 93% 47%;
+
+    --sidebar-background: 215 30% 6%;
+    --sidebar-foreground: 218 11% 65%;
+    --sidebar-primary: 142 71% 45%;
+    --sidebar-primary-foreground: 215 30% 6%;
+    --sidebar-accent: 199 89% 60%;
+    --sidebar-accent-foreground: 215 30% 6%;
+    --sidebar-border: 210 24% 16%;
+    --sidebar-ring: 142 71% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-mono antialiased;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-accent;
+  }
+}
+
+@layer components {
+  /* Terminal window styling */
+  .terminal-window {
+    @apply bg-[hsl(var(--terminal-bg))] border border-[hsl(var(--terminal-border))] rounded-lg overflow-hidden;
+  }
+
+  .terminal-header {
+    @apply flex items-center gap-2 px-4 py-3 border-b border-[hsl(var(--terminal-border))] bg-[hsl(var(--terminal-bg))];
+  }
+
+  .terminal-dot {
+    @apply w-3 h-3 rounded-full;
+  }
+
+  .terminal-body {
+    @apply p-6 font-mono text-sm;
+  }
+
+  /* Cyber card */
+  .cyber-card {
+    @apply bg-card border border-border rounded-lg p-6 transition-all duration-300;
+  }
+
+  .cyber-card:hover {
+    @apply border-primary/50;
+  }
+
+  /* Progress bar styling */
+  .skill-bar {
+    @apply h-2 rounded-full bg-muted overflow-hidden;
+  }
+
+  .skill-bar-fill {
+    @apply h-full rounded-full bg-primary transition-all duration-500;
+  }
+
+  /* Status badges */
+  .status-active {
+    @apply bg-primary/20 text-primary border border-primary/30;
+  }
+
+  .status-production {
+    @apply bg-secondary/20 text-secondary border border-secondary/30;
+  }
+
+  .status-research {
+    @apply bg-muted text-muted-foreground border border-border;
+  }
+
+  /* Timeline */
+  .timeline-line {
+    @apply absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-primary/50 to-transparent;
+  }
+
+  .timeline-dot {
+    @apply w-8 h-8 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center;
+  }
+
+  /* Typing cursor animation */
+  .cursor-blink {
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+
+  /* Nav link styling */
+  .nav-link {
+    @apply relative px-4 py-2 text-muted-foreground transition-all duration-300;
+  }
+
+  .nav-link:hover {
+    @apply text-primary;
+  }
+
+  .nav-link.active {
+    @apply text-primary;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-1/2 w-0 h-0.5 bg-primary transition-all duration-300 -translate-x-1/2;
+  }
+
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    @apply w-full;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+}
