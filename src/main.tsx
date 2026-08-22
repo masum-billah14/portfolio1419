@@ -10,9 +10,9 @@ const navigation = performance.getEntriesByType("navigation")[0] as
 
 if (
 	navigation?.type === "reload" &&
-	(window.location.pathname !== "/" || window.location.hash)
+	(window.location.pathname !== import.meta.env.BASE_URL || window.location.hash)
 ) {
-	window.history.replaceState(null, "", "/");
+	window.history.replaceState(null, "", import.meta.env.BASE_URL);
 	window.scrollTo(0, 0);
 }
 

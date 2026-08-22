@@ -58,7 +58,7 @@ root@masum-billah:~# Penetration Tester | Red Teamer | Security Researcher | Dig
               </div>
               <div className="p-3 h-[315px] lg:h-full">
                 <img
-                  src="/masum.jpg"
+                  src={`${import.meta.env.BASE_URL}masum.jpg`}
                   alt="Masum Billah"
                   className="h-full w-full object-cover object-center opacity-90"
                 />

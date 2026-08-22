@@ -63,7 +63,7 @@ const Navigation = () => {
             {navItems.map((item) => (
               <a
                 key={item.id}
-                href={item.href ?? `/#${item.id}`}
+                href={item.href ?? `${import.meta.env.BASE_URL}#${item.id}`}
                 target={item.href ? "_blank" : undefined}
                 rel={item.href ? "noopener noreferrer" : undefined}
                 className={cn(
@@ -99,7 +99,7 @@ const Navigation = () => {
             {navItems.map((item) => (
               <a
                 key={item.id}
-                href={item.href ?? `/#${item.id}`}
+                href={item.href ?? `${import.meta.env.BASE_URL}#${item.id}`}
                 target={item.href ? "_blank" : undefined}
                 rel={item.href ? "noopener noreferrer" : undefined}
                 onClick={() => setIsOpen(false)}
