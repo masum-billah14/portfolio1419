@@ -105,7 +105,7 @@ const certifications = [
     organization: "TryHackMe",
     year: "2026",
     level: "Professional",
-    description: "Cyber Security fundamentals and best practices certification.",
+    description: "Requires Fundamentals practical knowledge on OS, Networking, Web Pentesting, Security Operations, Bruteforcing & Cracking and Malware Analysis.",
     verifyUrl: "https://assets.tryhackme.com/certification-certificate/697da2ed6579ac88f26d9d79.pdf",
   },
   {
