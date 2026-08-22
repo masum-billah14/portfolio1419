@@ -4,55 +4,55 @@ import { Terminal, Trophy, Briefcase, GraduationCap, Zap } from "lucide-react";
 
 const journeyStages = [
   {
-    year: "2018 - 2019",
+    year: "2024 - 2025",
     title: "The Beginning",
     icon: GraduationCap,
     description:
       "Started my journey into cybersecurity with self-study and online courses. Learned Linux fundamentals, networking basics, and basic scripting. Built my first home lab for experimentation.",
     milestones: [
-      "Completed CompTIA Security+ certification",
+      "Completed Presecurity, Cybersec 101 path on TryHackMe ",
       "Set up first vulnerable VM lab",
       "Learned Python for automation",
       "Joined online security communities",
     ],
   },
   {
-    year: "2019 - 2020",
+    year: "2024 - 2025",
     title: "CTF & Lab Training",
     icon: Trophy,
     description:
       "Dedicated focus on Capture The Flag competitions and practical labs. Spent countless hours on platforms like HackTheBox, TryHackMe, and VulnHub developing offensive skills.",
     milestones: [
-      "Achieved Pro Hacker rank on HackTheBox",
-      "Participated in 30+ CTF competitions",
-      "Built custom exploitation tools",
+      "Achieved All Time Top 50 In Bangladesh on TryHackMe",
+      "Participated in 20+ CTF competitions",
+      "Participated in 5+ onsite CTF competitions",
       "Mastered web application attacks",
     ],
   },
   {
-    year: "2020 - 2022",
-    title: "Professional Development",
-    icon: Briefcase,
+    year: "2025 - 2026",
+    title: "Specialization",
+    icon: Zap,
     description:
-      "Transitioned to professional security work. Started performing authorized penetration tests, bug bounty hunting, and security assessments for real organizations.",
+      "Focused on TryHackMe and HackTheBox.Completed Red Teaming, Web Pentesting,AI security, SOC1, SOC2 paths in TryHackMe.Completed Web Pentesting and Penetration Testing paths in HackTheBox.Gained hands-on experience in real-world scenarios and advanced techniques.",
     milestones: [
-      "Obtained OSCP certification",
-      "First $10K bug bounty payout",
-      "Joined red team consultancy",
-      "Published first CVE disclosure",
+      "Earned CRTS, CRTA, SEC1 certification",
+      "Learned advanced exploitation techniques",
+      "Learned to use custom C2 framework",
+      "Contributed to open source tools",
     ],
   },
   {
-    year: "2022 - 2023",
-    title: "Advanced Specialization",
-    icon: Zap,
+    year: "2025 - 2026",
+    title: "Further Development",
+    icon: Briefcase,
     description:
-      "Focused on advanced attack techniques, red team operations, and specialized areas including Active Directory attacks, cloud security, and malware development.",
+      "Transitioned to advanced  security work. Started Solving real-world security challenges in HacktheBox Such as Active Directory attacks, ProLabs, Active Machine, and Forensics Sherlock. Gained experience in penetration testing and vulnerability assessment.",
     milestones: [
-      "Earned CRTO certification",
-      "Led enterprise red team engagements",
-      "Developed custom C2 framework",
-      "Contributed to open source tools",
+      "Obtained CPENT + LPT MASTER certification",
+      "Solve 8 ProLabs in HackTheBox",
+      "Rank #1 in HackTheBox Bangladesh Leaderboard",
+      "Ranked Top 500 in HackTheBox Global Leaderboard",
     ],
   },
   {
@@ -62,10 +62,10 @@ const journeyStages = [
     description:
       "Currently focusing on security research, vulnerability discovery, and mentoring the next generation of security professionals. Active in the community and contributing to the field.",
     milestones: [
-      "12 CVEs published and acknowledged",
-      "Speaking at security conferences",
+      "Learning about advanced topics like AI security and threat hunting",
+      "Trying to fil into bug bounty programs and responsible disclosure",
       "Mentoring junior researchers",
-      "Building advanced security tooling",
+      "Building security tooling",
     ],
   },
 ];
