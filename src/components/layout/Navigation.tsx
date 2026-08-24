@@ -13,7 +13,7 @@ const navItems = [
   {
     name: "Download CV",
     id: "cv-download",
-    href: "https://drive.google.com/file/d/1TYYpByZwh8XUbf9JRRCtUbv-ZroAa8jO/view?usp=sharing",
+    href: "https://drive.google.com/drive/folders/1xetEP5XWhAlB0PT0mQN83efFofFq--_s?usp=sharing",
   },
 ];
 
