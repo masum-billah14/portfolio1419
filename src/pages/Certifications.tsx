@@ -21,6 +21,14 @@ const certifications = [
     verifyUrl: "https://drive.google.com/file/d/1NYKKx9B2uKdYiVXzFzIs7IzSlVxJZsoX/view?usp=sharing",
   },
   {
+    name: "Certified Red Team Specialist",
+    organization: "CyberWarfare Labs",
+    year: "2025",
+    level: "Intermediate",
+    description: "Certified Red Team Specialist professional credential.",
+    verifyUrl: "https://www.credential.net/ae79d7ff-cbce-4111-a1e5-d6a82f1a1169#acc.5WhEyvS4",
+  },
+  {
     name: "Shinra Pro Lab",
     organization: "HackTheBox",
     year: "2026",
@@ -91,14 +99,6 @@ const certifications = [
     level: "Beginner",
     description: "Certified Red Team Analyst credential from CyberWarfare.",
     verifyUrl: "https://labs.cyberwarfare.live/credential/achievement/68dcf40a5c9b8f23b528faa3",
-  },
-  {
-    name: "Certified Red Team Specialist",
-    organization: "CyberWarfare Labs",
-    year: "2025",
-    level: "Intermediate",
-    description: "Certified Red Team Specialist professional credential.",
-    verifyUrl: "https://www.credential.net/ae79d7ff-cbce-4111-a1e5-d6a82f1a1169#acc.5WhEyvS4",
   },
   {
     name: "Cyber Security 101",
@@ -197,11 +197,11 @@ export const CertificationsSection = () => {
             </div>
 
             {/* Certifications Grid */}
-            <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {certifications.map((cert, index) => (
                 <div
                   key={cert.name}
-                  className="cyber-card animate-fade-in"
+                  className="cyber-card flex flex-col animate-fade-in"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="flex items-start gap-4">
