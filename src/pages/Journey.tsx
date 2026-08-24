@@ -56,7 +56,7 @@ const journeyStages = [
     ],
   },
   {
-    year: "2023 - Present",
+    year: "2026 - Present",
     title: "Research & Leadership",
     icon: Terminal,
     description:
